@@ -5,22 +5,18 @@
 
   <body>
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="docs-container">
 
         {% include header.html %}
-
-        <div class="wrapper">
-          <div id="main-content" class="inner-wrapper">
+        {% include sidenav.html %}
+         <main class="p-content" id="main-content">
 
             {{ content }}
 
-          </div>
-        </div>
 
         {% include footer.html %}
 
-      </div>
+      
     </div>
 
   </body>
