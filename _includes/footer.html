@@ -1,10 +1,13 @@
-<footer class="global clearfix" role="contentinfo">
-  <div class="legal clearfix">
-      <p class="twelve-col">&copy; {{ site.time | date: '%Y' }} Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
-      <ul class="inline-list clear">
-          <li><a class="external" href="http://www.ubuntu.com/legal"><small>Legal information</small></a>
-          </li>
-      </ul>
-      <span class="accessibility-aid"><a href="#">Got to the top of the page</a></span>
+<footer class="p-footer" role="contentinfo">
+  <div class="p-content__row u-no-margin--left">
+    <div class="col-12">
+      <p>
+        &copy; {{ site.time | date: "%Y" }}Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.
+{% if page.last_updated %}Page last updated: {{page.last_updated}}
+{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y" }}
+
+      </p>
+
+    </div>
   </div>
 </footer>
